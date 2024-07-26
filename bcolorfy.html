@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>bcolorfys</title>
+    </head>
+    <body>
+        <div>
+            <h1>mazen saad</h1>
+            <p>web</p>
+        </div>
+        <script src="./js/jquery-3.1.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $.fn.bcolorfy = function () {
+                    $(this).css("color", "blue");
+                };
+                $("h1").bcolorfy();
+                $("p").bcolorfy();
+            });
+        </script>
+    </body>
+</html>
